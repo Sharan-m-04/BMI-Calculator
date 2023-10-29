@@ -2,6 +2,7 @@ package com.bmi.calculator;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,8 +26,12 @@ public class HomeActivity extends AppCompatActivity {
 
         calcBtn.setOnClickListener(v -> {
             if (TextUtils.isEmpty(weight.getText().toString()) && TextUtils.isEmpty(height.getText().toString())){
+                cat.setVisibility(View.INVISIBLE);
+                res.setVisibility(View.INVISIBLE);
                 Toast.makeText(this, "Please Fill All The Fields...", Toast.LENGTH_SHORT).show();
             } else if (Float.parseFloat(height.getText().toString()) == 0.0) {
+                cat.setVisibility(View.INVISIBLE);
+                res.setVisibility(View.INVISIBLE);
                 Toast.makeText(this, "Height Cannot Be Zero...", Toast.LENGTH_SHORT).show();
             } else{
                 float w = Float.parseFloat(weight.getText().toString());
@@ -34,6 +39,7 @@ public class HomeActivity extends AppCompatActivity {
                 float h_sq = h * h;
                 float bmi = w/h_sq;
                 String resText = "BMI = " + bmi;
+                res.setVisibility(View.VISIBLE);
                 res.setText(resText);
                 String catText = "";
                 if (bmi < 18.5)
@@ -44,6 +50,7 @@ public class HomeActivity extends AppCompatActivity {
                     catText = "Category: Overweight";
                 else if (bmi >= 30)
                     catText = "Category: Obese";
+                cat.setVisibility(View.VISIBLE);
                 cat.setText(catText);
             }
         });
