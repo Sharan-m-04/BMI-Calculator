@@ -33,7 +33,7 @@ public class HomeActivity extends AppCompatActivity {
                 cat.setVisibility(View.INVISIBLE);
                 res.setVisibility(View.INVISIBLE);
                 Toast.makeText(this, "Height Cannot Be Zero...", Toast.LENGTH_SHORT).show();
-            } else{
+            } else {
                 float w = Float.parseFloat(weight.getText().toString());
                 float h = Float.parseFloat(height.getText().toString());
                 float h_sq = h * h;
