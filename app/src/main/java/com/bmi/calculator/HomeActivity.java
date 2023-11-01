@@ -48,7 +48,7 @@ public class HomeActivity extends AppCompatActivity {
         inches.setBackground(gd3);
 
         calcBtn.setOnClickListener(v -> {
-            if (TextUtils.isEmpty(weight.getText().toString()) && TextUtils.isEmpty(feet.getText().toString()) && TextUtils.isEmpty(inches.getText().toString())){
+            if (TextUtils.isEmpty(weight.getText().toString()) || TextUtils.isEmpty(feet.getText().toString()) || TextUtils.isEmpty(inches.getText().toString())){
                 cat.setVisibility(View.INVISIBLE);
                 res.setVisibility(View.INVISIBLE);
                 Toast.makeText(this, "Please Fill All The Fields...", Toast.LENGTH_SHORT).show();
