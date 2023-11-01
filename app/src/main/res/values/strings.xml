@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">BMI Calculator</string>
     <string name="logo">Logo</string>
-    <string name="enter_weight">Enter weight</string>
-    <string name="enter_height_in_mts">Enter Height in mts</string>
+    <string name="enter_weight">Kilograms</string>
+    <string name="enter_height_in_mts">Feet</string>
     <string name="calculate">Calculate</string>
     <string name="bmi">BMI = 0</string>
     <string name="category">Category: None</string>
     <string name="Note">NOTE: This app is intended for informational purposes only. It is not a substitute for professional medical advice or diagnosis. Consult with a healthcare professional for personalized health recommendations.</string>
+    <string name="enter_inches">Inches</string>
+    <string name="enter_height">Enter Height:</string>
+    <string name="enter_weight_tv">Enter Weight:</string>
 </resources>
