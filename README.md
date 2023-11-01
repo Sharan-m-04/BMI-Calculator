@@ -23,7 +23,7 @@ To use the BMI Calculator App, follow these steps:
 
 ## Key Features
 
-- **Calculate BMI:** Users can easily calculate their BMI by entering their weight and height.
+- **Calculate BMI:** Users can easily calculate their BMI by entering their weight (in kg) and height (in feet and inches).
 
 - **BMI Categories:** The app categorizes the calculated BMI into standard categories, such as underweight, normal weight, overweight, and obese, to help users understand their weight status.
 
@@ -33,8 +33,8 @@ To use the BMI Calculator App, follow these steps:
 
 ## How to Use
 
-1. Enter your weight.
-2. Enter your height.
+1. Enter your weight in kilograms.
+2. Enter your height in feet and inches.
 3. Click the "Calculate" button to view your BMI and its category.
 
 ## Why Use This App
